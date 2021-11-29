@@ -27,7 +27,7 @@ header {
 }
 
 header h1 {
-    font-size: 65px;
+    font-size: 7vw;
     padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
     border-color:#dcdcdc;
@@ -47,58 +47,60 @@ header nav ul {
 
 header nav ul li {
     padding: 0 33px;
-    font-size: 20px;
     font-style: italic;
+    font-size:2vw;
 }
 
+header nav ul li a {
+    padding:10px 15px;
+}
 section {
     padding: 60px;
+    align-items: flex-start;
 }
 
 .section-title {
-    font-size: 20px;
+    font-size: 3vw;
     display: inline-block;
     padding-bottom:20px;
     text-align:center;
     margin:0 auto;
-    width:50%;
+    width:100%;
     text-decoration: underline;
 }
 
 .section-title img {
     padding: 25px;
-    height: 300px;
-    width:290px;
+    height: 28vw;
+    width:28vw;
     border-left: 2px solid black;
 }
 /*add shadows to image*/
 
 .section-content {
     padding: 80px;
-    width: 50%;
-    float:right;
-    display: inline-block;
-    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .section-content h4{
-    margin:0 0 20px 5px;
     padding:0 0 12px;
     font-style: italic;
-    float: right;
-    font-size:18px;
+    font-size:3vw;
     border-bottom:2px solid black;
 }
 
 .section-content p {
-    margin: 15px;
-    font-size: 16px;
+    margin: 50px;
+    font-size: 2.5vw;
 }
 
 .section-content a{
-    padding:15px;
+    padding:50px;
     font-style: italic;
     color:rgb(43, 35, 95);
+    font-size:2.5vw;
 }
  /* add hover show image feature */
 
@@ -116,29 +118,61 @@ section {
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
+    align-items: center;
 }
+
 
 .contact-form{
-    margin: 20px;
     border: 1px solid;
-    padding: 10px 10px 10px 0;
     text-align: center;
-    width: 35%;
-    float: right;
+    margin: 20px 400px;
+    padding: 20px;
 }
 
-.contact-info {
-    text-align: left;
-    display: inline-block;
-    float:left;
-}
 
 .section-title p{
     font-size: 18px;
     padding: 20px;
     display:inline-flex;
     text-align: right;
+    margin: 10px 0;
+    text-decoration:none;
+}
+
+.contact-info {
+    text-align: left;
+    display: inline-block;
+    float: center;
+    flex:1;
+    margin:0px 72px;
+    border-left:2px solid black;   
+}
+
+.section-title p{
+    font-size: 2vw;
+    padding: 20px;
+    display:inline-flex;
+    text-align: center;
     margin-top:30px;
     text-decoration:none;
 }
 
+
+footer{
+    width:100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: .5px solid black;
+}
+
+footer h2{
+    font-size: 30px;
+    margin:0;
+}
+
+footer div{
+    line-height:1.5;
+    text-align: right;
+}
