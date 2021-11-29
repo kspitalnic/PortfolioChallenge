@@ -112,13 +112,33 @@ section {
 
 .project-content{
     text-align:center;
-    margin:0 50px;
+    margin:0 12%;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
 }
 
+.contact-form{
+    margin: 20px;
+    border: 1px solid;
+    padding: 10px 10px 10px 0;
+    text-align: center;
+    width: 35%;
+    float: right;
+}
 
+.contact-info {
+    text-align: left;
+    display: inline-block;
+    float:left;
+}
 
-
+.section-title p{
+    font-size: 18px;
+    padding: 20px;
+    display:inline-flex;
+    text-align: right;
+    margin-top:30px;
+    text-decoration:none;
+}
 
