@@ -21,7 +21,7 @@ header {
     width:100%;
     display: flex;
     justify-content: center;
-    padding:30%;
+    padding:25% 25% 0 25% ;
     align-items: center;
     flex-wrap:wrap;
 }
@@ -34,10 +34,15 @@ header h1 {
     display: inline-block;
 }
 
-header nav {
+nav {
     margin:10px 0;
+    position:sticky;
+    top:0;
+    padding: 0 33%;
+    background-color:#f5f5f5
 }
-header nav ul {
+
+nav ul {
     display:flex;
     flex-wrap: wrap;
     justify-content:space-between;
@@ -45,14 +50,15 @@ header nav ul {
     align-items:center;
 }
 
-header nav ul li {
-    padding: 0 33px;
+nav ul li {
+    padding: 0 10px;
     font-style: italic;
     font-size:2vw;
 }
 
-header nav ul li a {
+nav ul li a {
     padding:10px 15px;
+
 }
 section {
     padding: 60px;
@@ -65,7 +71,7 @@ section {
     padding-bottom:20px;
     text-align:center;
     margin:0 auto;
-    width:100%;
+    width:50%;
     text-decoration: underline;
 }
 
@@ -75,11 +81,10 @@ section {
     width:28vw;
     border-left: 2px solid black;
 }
-/*add shadows to image*/
 
 .section-content {
     padding: 80px;
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -101,6 +106,10 @@ section {
     font-style: italic;
     color:rgb(43, 35, 95);
     font-size:2.5vw;
+}
+
+#about {
+    width:100%
 }
  /* add hover show image feature */
 
@@ -124,6 +133,7 @@ section {
 
 .contact-form{
     border: 1px solid;
+    border-radius: 15px;
     text-align: center;
     margin: 20px 400px;
     padding: 20px;
@@ -146,6 +156,15 @@ section {
     flex:1;
     margin:0px 72px;
     border-left:2px solid black;   
+}
+
+input {
+    width:100%;
+}
+
+textarea {
+    resize: none;
+    width:100%;
 }
 
 .section-title p{
@@ -176,3 +195,55 @@ footer div{
     line-height:1.5;
     text-align: right;
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+    
+      footer{
+        text-align: center;
+        width: 100%;
+      }
+
+      .section-title {
+        width: 80%;
+      }
+      
+      .project {
+        flex: 0 70%;
+      }
+      
+      }
+
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    header h1 {
+
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    header h1 {
+   
+    }
+  }
