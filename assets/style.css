@@ -133,6 +133,7 @@ a:hover {
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
+    padding:150;
 }
 
 figure {
@@ -165,7 +166,7 @@ figure img {
     border-radius: 15px;
     text-align: center;
     padding: 20px;
-    margin-right: 5%;
+    margin: 0 5%;
 }
 
 input {
@@ -234,6 +235,7 @@ footer div{
       footer{
         text-align: center;
         width: 100%;
+        display: inline-flex;
       }
 
       .section-title {
