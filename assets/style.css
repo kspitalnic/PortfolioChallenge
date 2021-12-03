@@ -53,7 +53,7 @@ nav ul {
 
 nav ul li {
     font-style: italic;
-    font: size 18px;
+    font: size 22px;
 }
 
 nav ul li a {
@@ -63,6 +63,7 @@ nav ul li a {
 
 a:hover {
     font-weight: bold;
+    border: 6px;
 }
 
 #about {
@@ -132,6 +133,17 @@ a:hover {
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
+}
+
+figure {
+    text-align:center;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+figure img {
+    height: 200px;
+    width: 220px;
 }
 
 .section-title p{
