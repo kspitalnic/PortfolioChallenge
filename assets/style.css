@@ -2,6 +2,8 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -28,10 +30,9 @@ header {
 
 header h1 {
     font-size: 7vw;
-    padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
     border-color:#dcdcdc;
-    display: inline-block;
+    padding:5px;
 }
 
 nav {
@@ -39,7 +40,7 @@ nav {
     position:sticky;
     top:0;
     padding: 0 33%;
-    background-color:#f5f5f5
+    background-color:#f5f5f5;
 }
 
 nav ul {
@@ -51,40 +52,50 @@ nav ul {
 }
 
 nav ul li {
-    padding: 0 10px;
     font-style: italic;
-    font-size:2vw;
+    font: size 18px;
 }
 
 nav ul li a {
-    padding:10px 15px;
-
+    justify-content: space-between;
 }
-section {
-    padding: 60px;
+
+
+a:hover {
+    font-weight: bold;
+}
+
+#about {
+    width:100%;
+    padding: 25% 10% 0 10%;
     align-items: flex-start;
+    display:flex;
+}
+
+#projects, #contact {
+    width:100%;
+    padding:5% 10%;
+    align-items:flex-start;
+    display:flex;
 }
 
 .section-title {
-    font-size: 3vw;
+    font-size: 2vw;
     display: inline-block;
-    padding-bottom:20px;
     text-align:center;
-    margin:0 auto;
     width:50%;
     text-decoration: underline;
-}
-
-.section-title img {
-    padding: 25px;
-    height: 28vw;
-    width:28vw;
     border-left: 2px solid black;
 }
 
+.section-title img {
+    padding: 40px 25px 25px 25px;
+    height: auto;
+    width:28vw;
+}
+
 .section-content {
-    padding: 80px;
-    width: 50%;
+    margin: 40px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -92,42 +103,48 @@ section {
 .section-content h4{
     padding:0 0 12px;
     font-style: italic;
-    font-size:3vw;
-    border-bottom:2px solid black;
+    font-size:18px;
+    text-align: left;
 }
 
 .section-content p {
-    margin: 50px;
-    font-size: 2.5vw;
+    margin: 10px 50px;
+    font-size: 14px;
 }
 
 .section-content a{
-    padding:50px;
+    padding:0 50px;
     font-style: italic;
     color:rgb(43, 35, 95);
-    font-size:2.5vw;
+    font-size:14px;
 }
 
-#about {
-    width:100%
-}
+
  /* add hover show image feature */
 
-.projects {
+#projects {
     display:flex;
-    flex-wrap:wrap;
     width:100%;
     margin:0 auto;
-    justify-content: space-around;
 }
 
 .project-content{
-    text-align:center;
-    margin:0 12%;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
-    align-items: center;
+}
+
+.section-title p{
+    font-size: 1.5vw;
+    padding: 20px;
+    display:inline-flex;
+    margin-top:30px;
+    text-decoration:none;
+}
+
+.contact-info {
+    display: inline-block;
+    margin:0px 72px;
 }
 
 
@@ -135,27 +152,8 @@ section {
     border: 1px solid;
     border-radius: 15px;
     text-align: center;
-    margin: 20px 400px;
     padding: 20px;
-}
-
-
-.section-title p{
-    font-size: 18px;
-    padding: 20px;
-    display:inline-flex;
-    text-align: right;
-    margin: 10px 0;
-    text-decoration:none;
-}
-
-.contact-info {
-    text-align: left;
-    display: inline-block;
-    float: center;
-    flex:1;
-    margin:0px 72px;
-    border-left:2px solid black;   
+    margin-right: 5%;
 }
 
 input {
@@ -167,13 +165,14 @@ textarea {
     width:100%;
 }
 
-.section-title p{
-    font-size: 2vw;
-    padding: 20px;
-    display:inline-flex;
-    text-align: center;
-    margin-top:30px;
-    text-decoration:none;
+input:focus {
+    background-color:#f5f5f5;
+    outline:none;
+}
+
+textarea:focus {
+    background-color: #f5f5f5;
+    outline:none;
 }
 
 
@@ -187,7 +186,7 @@ footer{
 }
 
 footer h2{
-    font-size: 30px;
+    font-size: 2vw;
     margin:0;
 }
 
@@ -195,6 +194,8 @@ footer div{
     line-height:1.5;
     text-align: right;
 }
+
+
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -215,7 +216,7 @@ footer div{
       }
     
       header nav ul li a {
-        font-size: 20px;
+        font-size: 1vw;
       }
     
       footer{
@@ -233,17 +234,30 @@ footer div{
       
       }
 
-  
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
-    header h1 {
 
-    }
-  }
   
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
-    header h1 {
-   
+
+
+  
+@media screen and (max-width: 1038px) {
+    nav ul li a{
+        padding: 0;
     }
-  }
+
+
+}   
+
+
+@media screen and (max-width: 980px) {
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+}
+  
+@media screen and (max-width: 575px) {
+
+}
