@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <LINK rel="stylesheet" href="./assets/style.css">
     <title>Spitalnic Portfolio</title>
+
 </head>
 
 <body>
@@ -12,23 +13,29 @@
     <h1>
         <a href="./index.html">Spitalnic</a>
     </h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#projects">Proejcts</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
+ <a href="#" class="hamburger">
+     <span class="bar"></span>
+     <span class="bar"></span>
+     <span class="bar"></span>
+ </a>
 </header>
+<nav>
+    <ul>
+        <li>
+            <a href="#aboutscroll">About</a>
+        </li>
+        <li>
+            <a href="#projects">Projects</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+</nav>
 <section id="about">
     <div class="section-title">
-        <h2>About</h2>
+        <!--inline flex, tex-align left, width 50%, flex direction column-->
+        <h2 id="aboutscroll">About</h2>
         <img src="assets/portrait.jpeg" alt="Portrait of Katie">
    </div>
    <div class="section-content">
@@ -50,20 +57,29 @@
     </div>
     <div class="project-content">
         <figure>
-            <img src="https://via.placeholder.com/175" alt="placeholder image for projcect cover photo">
-            <figcaption>Project 1 Title</figcaption> 
+            <a href="https://kspitalnic.github.io/tybFanpage/" target="_blank">
+            <img src="./assets/tybthumbnail.png" alt="Thumbnail for thousand years between band fan page 
+            website. Site created modeled off of class module 'RUN BUDDY' lesson">
+            <figcaption>Thousand Years Between Fanpage</figcaption> 
+            </a>
         </figure>
         <figure>
+            <a href="#">
             <img src="https://via.placeholder.com/175" alt="placeholder image for projcect cover photo">
-            <figcaption>Project 2 Title</figcaption>  
+            <figcaption>  Project 2 Work - Coming Soon....  </figcaption>  
+            </a>
         </figure>
         <figure>
+            <a href="#">
             <img src="https://via.placeholder.com/175" alt="placeholder image for projcect cover photo">
-            <figcaption>Project 3 Title</figcaption> 
+            <figcaption>Project 3 Work  -   Coming Soon...</figcaption> 
+            </a>
         </figure>
         <figure>
+            <a href="#">
             <img src="https://via.placeholder.com/175" alt="placeholder image for projcect cover photo">
-            <figcaption>Project 4 Title</figcaption>  
+            <figcaption>Project 4 Work - Coming Soon...</figcaption>  
+            </a>
         </figure>
     </div>
 </section>
@@ -71,13 +87,14 @@
 <section id="contact">
     <div class="section-title">
     <h2>Contact</h2>
-    <div class="contact-info">
-    <p>
-    Name: Katie Spitalnic
-    <br/>
-    Email: kespitalnic@gmail.com 
-    </p>
-    </div>
+        <div class="contact-info">
+            <p>
+            Name: Katie Spitalnic
+            </p>
+            <p>
+            Email: <a href="mailto:kespitalnic@gmail.com">kespitalnic@gmail.com</a>
+            </p>
+            </div>
     </div>
     <div class="contact-form">
         <form>
@@ -100,6 +117,9 @@
 
 <footer>
     <h3>Spitalnic Web Development</h3>
+    <a href="https://github.com/kspitalnic" target="_blank">
+    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--i_sb3chq--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/fk0849hvg2rt13bpqhjy.jpg" width=160px>
+    </a>
 </footer>
 
 
