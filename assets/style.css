@@ -142,7 +142,6 @@ section {
 .contact-info {
     text-align: left;
     display: inline-block;
-    float: center;
     flex:1;
     margin:0px 72px;
     border-left:2px solid black;   
