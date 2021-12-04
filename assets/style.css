@@ -63,7 +63,6 @@ nav ul li a {
 
 a:hover {
     font-weight: bold;
-    border: 6px;
 }
 
 #about {
@@ -89,6 +88,11 @@ a:hover {
     border-left: 2px solid black;
 }
 
+.conotact-info{
+    font-size: 1vw;
+    margin: 5px;
+}
+
 .section-title img {
     padding: 40px 25px 25px 25px;
     height: auto;
@@ -96,7 +100,7 @@ a:hover {
 }
 
 .section-content {
-    margin: 40px;
+    padding: 10% 2%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -104,20 +108,20 @@ a:hover {
 .section-content h4{
     padding:0 0 12px;
     font-style: italic;
-    font-size:18px;
+    font-size:2vw;
     text-align: left;
 }
 
 .section-content p {
     margin: 10px 50px;
-    font-size: 14px;
+    font-size: 1.5vw;
 }
 
 .section-content a{
     padding:0 50px;
     font-style: italic;
     color:rgb(43, 35, 95);
-    font-size:14px;
+    font-size:1.5vw;
 }
 
 
@@ -142,22 +146,31 @@ figure {
     margin: 5px;
 }
 
+figure:hover{
+    border: 2px solid black;
+}
+
 figure img {
     height: 200px;
     width: 220px;
+    filter:grayscale(80%);
 }
+
+figure img:hover {
+    height: 210px;
+    width: 240px;
+    filter:grayscale(0%);
+    }
+
 
 .section-title p{
     font-size: 1.5vw;
-    padding: 20px;
-    display:inline-flex;
-    margin-top:30px;
+    margin-top:40px;
     text-decoration:none;
 }
 
 .contact-info {
     display: inline-block;
-    margin:0px 72px;
 }
 
 
